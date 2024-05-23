@@ -1,5 +1,5 @@
 import UseEffect from "./components/UseEffect";
-
+import AssignmentParent from "./components/AssignmentParent";
 
 function App() {
 
@@ -7,7 +7,8 @@ function App() {
   return (
     <>
       <h1>Hey</h1>
-      <UseEffect/>
+      {/* <UseEffect/> */}
+      <AssignmentParent/>
     </>
   );
 }
