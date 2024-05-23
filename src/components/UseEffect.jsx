@@ -6,39 +6,30 @@ function UseEffect(){
     const [todos, setTodos] = useState([])
 
    useEffect(()=>{
-      fetch("")
+      fetch("https://sum-server.100xdevs.com/todos")
       .then(async(res)=>{
           const res2 = await res.json();
-          setTodos(res2)
+          console.log(res2.todos)
+        setTodos(res2.todos)
       })
-   }, [])
+   },[])
 
     return(
         <>
+            {todos.map(todoobjs => <TodoFunc title={todoobjs.title} description={todoobjs.description} />)}
         </>
     )
 }
 
-
 export default UseEffect 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export function TodoFunc({title, description}){
+    return(
+        <>
+            <h2>{true}</h2>
+        </>
+    )
+}
 
 
 
@@ -51,3 +42,8 @@ export default UseEffect
 
 //useEffect(()=>{}, [this is where we define the condition for when fetching operation shud be performed])
 //if we leave it blank [], then fetching operation will perform only once when the component renders for the first time 
+//[] is known as the dependency array 
+
+//what does [] take as input? It takes as input state variables. And whenever the state variable changes, the code inside useEffect rerenderrs. so it will look like:
+// useEffect(()=>{}, [todos])
+//Everytime todos variable changes, code inside callback fn of useEffect will re-render
