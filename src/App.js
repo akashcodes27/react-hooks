@@ -1,7 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import UseEffect from "./components/UseEffect";
+
 
 function App() {
+
+
   return (
     <>
     </>
@@ -9,3 +11,5 @@ function App() {
 }
 
 export default App;
+
+
