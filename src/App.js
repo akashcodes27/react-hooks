@@ -1,5 +1,7 @@
 import UseEffect from "./components/UseEffect";
 import Assignment from "./components/Assignment";
+import SumOfInput from "./components/SumOfInput";
+import UseCallback from "./components/UseCallback";
 
 function App() {
 
@@ -8,7 +10,10 @@ function App() {
     <>
       <h1>Hey</h1>
       {/* <UseEffect/> */}
-      <Assignment/>
+      {/* <Assignment/> */}
+      {/* <SumOfInput/> */}
+      <UseCallback/>
+
     </>
   );
 }
