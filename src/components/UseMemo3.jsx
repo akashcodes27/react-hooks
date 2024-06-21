@@ -37,6 +37,7 @@ function UseMemo3(){
     // console.log(finalExchangeEarnings)
 
     const finalExchangeEarnings = useMemo(()=>{
+        console.log("Hey")
         return exchange1data.earnings + exchange2data.earnings
     },[exchange1data, exchange2data])
 
@@ -48,6 +49,7 @@ function UseMemo3(){
 
     return(
         <>
+            {totalEarnings}
         </>
     )
 }

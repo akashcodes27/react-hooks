@@ -6,6 +6,7 @@ import AssignmentFunc from "./components/AssignmentUsingAxios";
 import FetchingTodos from "./components/FetchingTodosUseEffect";
 import UseMemo1 from "./components/UseMemo1";
 import UseMemo2 from "./components/UseMemo2"
+import UseMemo3 from "./components/UseMemo3"
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
       {/* <AssignmentFunc/> */}
       {/* <FetchingTodos/> */}
       {/* <UseMemo1/> */}
-      <UseMemo2/>
+      {/* <UseMemo2/> */}
+      <UseMemo3/>
 
 
 
