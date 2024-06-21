@@ -47,3 +47,5 @@ export function TodoFunc({title, description}){
 //what does [] take as input? It takes as input state variables. And whenever the state variable changes, the code inside useEffect rerenderrs. so it will look like:
 // useEffect(()=>{}, [todos])
 //Everytime todos variable changes, code inside callback fn of useEffect will re-render
+
+//Remember: We cannot use async-wait for the function defined inside the useEffect

@@ -39,19 +39,21 @@ function TodoFunc({id}){
     const[todo, setTodo] = useState([])
     useEffect(()=>{
         fetch(`https://sum-server.100xdevs.com/todo?id=${id}`)
-        .then((res)=>{
-            res.json()
-            .then((response)=>{
-                setTodo(response)
-                // we fetched a specific todo with the mentioned id 
-                console.log(response)
-            })
+        .then( async (res)=>{
+           const res2 = await res.json()
+           setTodo(res2)
+            
         })
     },[id])
     // as we can see above, id is our dependency, which means the logic inside useEffect re-renders everytime the id changes 
     return(
         <>
-            {id}
+            {/* fetch returns a whole array of todos, hence we can iterate over all these todos */}
+            {/* {res2} */}
+    
+
         </>
     )
 }
+
+//This assignment is for fetching todo of specific id, not for fetching all todos 

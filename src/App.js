@@ -1,18 +1,29 @@
 import UseEffect from "./components/UseEffect";
 import Assignment from "./components/Assignment";
-import SumOfInput from "./components/SumOfInput";
+// import SumOfInput from "./components/SumOfInput";
 import UseCallback from "./components/UseCallback";
+import AssignmentFunc from "./components/AssignmentUsingAxios";
+import FetchingTodos from "./components/FetchingTodosUseEffect";
+import UseMemo1 from "./components/UseMemo1";
+import UseMemo2 from "./components/UseMemo2"
 
 function App() {
 
 
   return (
     <>
-      <h1>Hey</h1>
+      <h1>Welcome to React</h1>
+      {/* <h1>Hey</h1> */}
       {/* <UseEffect/> */}
       {/* <Assignment/> */}
       {/* <SumOfInput/> */}
-      <UseCallback/>
+      {/* <UseCallback/> */}
+      {/* <AssignmentFunc/> */}
+      {/* <FetchingTodos/> */}
+      {/* <UseMemo1/> */}
+      <UseMemo2/>
+
+
 
     </>
   );
